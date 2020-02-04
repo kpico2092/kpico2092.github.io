@@ -1,27 +1,81 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+	<meta charset="utf-8"> 
+	<link rel="stylesheet" type="text/css" href="main.css">
 
-<title> First Git Repo! </title>
+
+<script>
+function myFunction(param) {
+	value = param
+	console.log(value);
+	images = ['gecko.jpg', 'sloth.jpg', 'giraffe.jpg', 'cat.jpg', 'dog.jpg'];
+	text = '';
+
+	switch(value) {
+		case 0:
+			text = "A hike and rafting on the first date? Woah. Your spirit animal is: ";
+			break;
+		case 1: 
+			text = "Ok then. Jumping straight to extreme comfort zone. Your spirit animal is:";
+			break;
+		case 2: 
+			text = "Oh yeah, make sure your date knows you won't even fit in a box. Your spirit animal is:";
+			break;
+		case 3: 
+			text = "Sticking with the traditional. A very solid scaredy cat plan. Your spirit animal is:";
+			break;
+		case 4:
+			text = "Going with some classic hipster action to hide your vulnerabilities. Your spirit animal is:";
+			break;
+		default:
+			"Sticking with classic hipster to be sure it takes a while before your date finds out you are not hip. Your spirit animal is"
+	}
+
+	document.getElementById("spirittext").innerHTML= text;
+	document.getElementById("animal").src= images[value];
+}
+</script>
 
 </head>
 
 <body>
 
-<h1> First Git Page </h1>
+<div id="main">
 
-<h2>My First Web Page</h2>
-<p>My First Paragraph.</p>
+	<div id="mainbody">
+		<H1>Find your spirit animal<br>
+		 (based on first date preferences)</H1>
 
-<p id="demo"></p>
+		<p>The activity you are most likely to choose for a first date is:</p>
 
-<script>
-document.getElementById("demo").innerHTML = 5 + 6;
-</script>
+		<button class="button" onclick="myFunction(0)">A hike and and whitewater rafting</button><br>
+		<button class="button" onclick="myFunction(1)">Netflix and chill</button><br>
+		<button class="button" onclick="myFunction(2)">Wine and cheese in a cemetery</button><br>
+		<button class="button" onclick="myFunction(3)">Dinner and a movie</button><br>
+		<button class="button" onclick="myFunction(4)">Brew pub and concert</button><br>
+
+	</div>
+
+
+
+	<div id="assessment">
+		<h3>Assessment</h3>
+		<p id="answer"></p>
+		<p id="spirittext"></p>
+		<img id="animal" src="">
+	</div>
+
+</div>
+
+
+
+
 
 
 </body>
 
+
+
 </html>
-
-
