@@ -8,20 +8,59 @@
 
 	
 
-</head>head>
+</head>
 
 <body>
 
 <h1>First Quiz</h1>
 
 <button onclick="firstFunction()"> CLICK ME </button>
+<button onclick="secondFunction()">Also Click Me</button> 
+<button onclick="firstFunction(2)">Also Click Me</button>"
 
+<div id="someContent">
+
+</div>
 
 	<script>
-		function firstFunction () {
-			alert ('hello function');
+
+		fruit = ['apple', 'orange','kiwi', 'kumquat']
+		text = ['A hike and rsfting on the first date? Woah. Your spirit animal is:","Ok then. Jumping straight to extreme comfort zone. Your spirit animal is:","Oh yeah, make sure your date knows you won't even fit in a box. Your spirit animal is:","Sticking with the traditional. A very solid scaredy cat plan. Your spirit animal is:", Sticking with the traditional. A very solid scaredy cat plan. Your spirit animal is:","Going with some classic hipster action to hide your vulnerabilities. Your spirit animal is:"]
+
+		function nameoffunction() {
+			statements here;
+		}
+		
+		function firstFunction (quizVal) {
+			value - quizVal;
+
+			switch(value) {
+				case 0;
+				html = "<h2>" + text [value] + "</h2>"; 
+			console.log('a hike');
+			document.getElementById('someContent').innerHTML= '<h3>a hike</h3>';
+			break;
+
+				case 1; 
+			console.log('netflix');
+			document.getElementById('someContent').innerHTML='<h3>netfllix/h3>';
+			break;
+
+				case 2;
+			console.log('wine');
+			document.getElementById('someContent').innerHTML= '<h3>wine</h3>';
+
+
+
 
 		}
+
+		function secondFunction() {
+			console.log('the cemetary');
+		
+
+		}
+
 	</script>
 
 </body>
