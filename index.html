@@ -1,100 +1,45 @@
-<!DOCTYPE html>
 <html>
 
 <head>
 
-	<title> First Git Repo! </title> 
-	<meta charset="utf-8">
+<style>
 
-	
+body {
+	background-color: #FFF278;
+}
+
+</style>
 
 </head>
 
 <body>
 
-	<h2> Positive Affirmation </h2>
+	<h1>My Mood Ring</h1>
 
-	<button onclick="">Give a Positive Statement</button>
+	<button id="moodButton" onclick="changeMood()" value="0">Change my mood</button>
 
-	<div id="affirmation"></div>
-
-	<script>
-
-	function positiveAffirmations() {
+	<div id="moodStatement">Sunshiny feeling</div>
 
 
+<script>
+text =""
+function changeMood(){
+	button = document.getElementById("moodButton")
+	if (button.value == '0') {
+		text ="Rainy Day Feeling";
+		document.getElementById('moodStatement').innerHTML = text
+		document.body.style.backgroundColor = "5465FF";
+		button.value = '1';
 	}
+	else {
+		text = "Sunshiny feeling";
+		document.getElementById('moodStatement').innerHTML = text;
+				document.body.style.backgroundColor = "#FFF278";
+		button.value = '0';
+	}
+}
 
-		bePositiveText ="I'm smart. I'm pretty. And goddamn people like me <br>";
-
-		total =0;
-		while (total > 50) {
-			console.log (bePositiveText);
-			existingAffirms 
-			total = total + 1; 
-			condole.log(total); 
-
-				}
-		
 
 </script>
-
-<script type="">
-
-<h1>First Quiz</h1>
-
-<button onclick="firstFunction()"> CLICK ME </button>
-<button onclick="secondFunction()">Also Click Me</button> 
-<button onclick="firstFunction(2)">Also Click Me</button>
-
-<div id="someContent">
-
-</div>
-</script>
-
-	<script>
-
-		fruit = ['apple', 'orange','kiwi', 'kumquat']
-		text = ['A hike and rsfting on the first date? Woah. Your spirit animal is:","Ok then. Jumping straight to extreme comfort zone. Your spirit animal is:","Oh yeah, make sure your date knows you won':",  "Sticking with the traditional. A very solid scaredy cat plan. Your spirit animal is:", Sticking with the traditional. A very solid scaredy cat plan. Your spirit animal is:","Going with some classic hipster action to hide your vulnerabilities. Your spirit animal is:"]
-
-		function nameoffunction() {
-			statements here;
-		}
-		
-		function firstFunction (quizVal) {
-			value - quizVal;
-
-			switch(value) {
-				case 0;
-				html = "<h2>" + text [value] + "</h2>"; 
-			console.log('a hike');
-			document.getElementById('someContent').innerHTML= '<h3>a hike</h3>';
-			break;
-
-				case 1; 
-			console.log('netflix');
-			document.getElementById('someContent').innerHTML='<h3>netfllix/h3>';
-			break;
-
-				case 2;
-			console.log('wine');
-			document.getElementById('someContent').innerHTML= '<h3>wine</h3>';
-
-
-
-
-		}
-
-		function secondFunction() {
-			console.log('the cemetary');
-		
-
-		}
-
-	</script>
-
 </body>
-
-
-
 </html>
